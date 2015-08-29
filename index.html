@@ -168,15 +168,13 @@
 
 <div id="content">
 
-
-<section class="container">
-
+<div class="container">
 
 <h2>Names Registry</h2>
 
-
 <p>The Names Registry is a searchable version of the WRA Form 26 register and Final Accounting Reports (FAR). These records contain the names and other information about the individuals held in the ten WRA camps during the WWII incarceration.</p>
 
+<!-- about panels -->
 <div class="panel-group" id="accordian">
 	<div class="panel panel-default">
 		<div class="panel-heading">
@@ -305,40 +303,38 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div><!-- end about panels -->
 
-
-<div class="white-row">
-<div id="searchform">
-	<form action="/search/results/" method="get" class="input-group nomargin-bottom">
-	<div class="form-group">
-<div class="col-md-7" style="padding-right:0px;">
-  <input class="form-control" id="id_query" name="query" type="text" value="" placeholder="Search the Registry..." />
-</div>
-<div class="col-md-3" style="padding-left:0px;padding-right:0px;">
-  <select id="campSelect" class="form-control pointer">
-  <option value="" selected="selected">All camps</option>
-  <option value="4-amache">Amache (Granada)</option>
-  <option value="3-gilariver">Gila River</option>
-  <option value="5-heartmountain">Heart Mountain</option>
-  <option value="4-amache">Jerome</option>
-  <option value="4-amache">Manzanar</option>
-  <option value="4-amache">Minidoka</option>
-  <option value="4-amache">Poston (Central Utah)</option>
-  <option value="4-amache">Rohwer</option>
-  <option value="4-amache">Topaz</option>
-  <option value="4-amache">Tule Lake</option>
-  </select>
-</div>
-<div class="col-md-2" style="padding-left:0px;padding-right:0px;">
-  <span class="input-group-btn">
-    <button class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
-  </span>
-</div>
-</div>  
+<!-- begin searchform -->
+<div id="searchform" class="white-row">
+<form action="/search/results/" method="get" class="input-group nomargin-bottom">
+    <div class="form-group">
+        <div class="col-md-7" style="padding-right:0px;">
+            <input class="form-control" id="id_query" name="query" type="text" value="" placeholder="Search the Registry..." />
+        </div>
+        <div class="col-md-3" style="padding-left:0px;padding-right:0px;">
+            <select id="campSelect" class="form-control pointer">
+                <option value="" selected="selected">All camps</option>
+                <option value="4-amache">Amache (Granada)</option>
+                <option value="3-gilariver">Gila River</option>
+                <option value="5-heartmountain">Heart Mountain</option>
+                <option value="4-amache">Jerome</option>
+                <option value="4-amache">Manzanar</option>
+                <option value="4-amache">Minidoka</option>
+                <option value="4-amache">Poston (Central Utah)</option>
+                <option value="4-amache">Rohwer</option>
+                <option value="4-amache">Topaz</option>
+                <option value="4-amache">Tule Lake</option>
+            </select>
+        </div>
+        <div class="col-md-2" style="padding-left:0px;padding-right:0px;">
+            <span class="input-group-btn">
+                <button class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+           </span>
+        </div>
+    </div>  
 </form>
-</div>
-</div>
+</div> <!-- end search form -->
 
 <!-- search results-->
 <div class="white-row">
@@ -382,10 +378,8 @@
   </ul>
 </nav>
 </div>
-</div>
 
 <div id="records">
-
 <table class="table table-striped">
 	<thead>
 		<tr>
@@ -602,10 +596,9 @@
   </ul>
 </nav>
 </div>
-</div>
+</div> <!-- end records -->
 
-
-</div><!-- end search results-->
+</div><!-- end search results -->
 
 </div><!-- .container-fluid -->
 
