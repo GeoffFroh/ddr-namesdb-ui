@@ -67,7 +67,33 @@
 
 <!-- /custom theme -->
 
+<!-- gallery/list style -->
+<style type="text/css">
+  .list-object a.pull-left { width:110px; }
+  .gallery-list-text {
+    color: #ffffff !important;
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    display: block;
+  }
+  .gallery-list-id {
+    font-size: 10px !important;
+    line-height: 1.2 !important;
+  }
+  ul.pagination li.active span {
+    background-color: #f07057;
+    border-color: #f07057;
+  }
+  ul.pagination li.active > span:hover {
+    background-color: #e06046;
+  }
 
+  #object-display { }
+  #object-download { }
+  #object-rights { padding-top: 20px; }
+</style>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -165,7 +191,7 @@
 			</div>	
 		</header><!-- #page-title -->
 	
-
+<!-- begin main content -->
 <div id="content">
 
 <div class="container">
@@ -179,79 +205,103 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <b>Birth Year</b> <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Birth year"><i class="fa fa-question-circle"></i></a>
+                                    <b><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Last name" style="color:#000000 !important;">Last Name</a></b>
                                 </td>
                                 <td>
-                                    1884
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <b ><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Gender" style="color:#000000 !important;">Gender</a></b>
-                                </td>
-                                <td>
-                                    Male
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="WRA-assigned family ID (Form 26 - Item 14)">WRA Family No.</a>
-                                </td>
-                                <td>
-                                    60091
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="WRA-assigned individual ID (Form 26 - Item 14)">WRA Individual No.</a>
-                                </td>
-                                <td>
-                                    60091A
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Citizenship status">Citizenship Status</a>
-                                </td>
-                                <td>
-                                    Non-citizen
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Alien registration status and number">Alien Registration</a>
-                                </td>
-                                <td>
-                                    2754771
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Unique identifier in Names Registry">Names Registry ID</a>
-                                </td>
-                                <td>
-                                    88922/nr007bb08
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Last name">Last Name</a>
-                                </td>
-                                <td>
-                                    Ikeda
+                                    Sumida<!-- last_name -->
                                 </td>
                             </tr>
                             <tr> 
                                 <td>
-                                    <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="First name">First Name</a>
+                                    <b><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="First name" style="color:#000000 !important;">First Name</a></b>
                                 </td>
                                 <td>
-                                    Saku
+                                    Chimata<!-- first_name -->
+                                </td>
+                            </tr>
+                            <tr> 
+                                <td>
+                                    <b><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="First name" style="color:#000000 !important;">Middle Name</a></b>
+                                </td>
+                                <td>
+                                    Sam<!-- middle_name -->
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="State of residence at time of removal">Home State</a>
+                                    <b><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Alternate and middle names" style="color:#000000 !important;">Other Names</a></b>
+                                </td>
+                                <td>
+                                    nickname: "Chimmy"; alternate: Sumida<!-- other_names -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Birth Year</b> <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Birth year" style="color:#000000 !important;"></a></b>
+                                </td>
+                                <td>
+                                    1884 <!-- birth_year -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Gender" style="color:#000000 !important;">Gender</a></b>
+                                </td>
+                                <td>
+                                    Male <!-- gender -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="WRA-assigned family ID (Form 26 - Item 14)" style="color:#000000 !important;">WRA Family No.</a></b>
+                                </td>
+                                <td>
+                                    60091 <!-- wra_family_no -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="WRA-assigned individual ID (Form 26 - Item 14)" style="color:#000000 !important;">WRA Individual No.</a></b>
+                                </td>
+                                <td>
+                                    60091A <!-- wra_individual_no -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Citizenship status" style="color:#000000 !important;">Citizenship Status</a></b>
+                                </td>
+                                <td>
+                                    Non-citizen <!-- citizenship -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Alien registration status and number" style="color:#000000 !important;">Alien Registration</a></b>
+                                </td>
+                                <td>
+                                    2754771 <!-- alien_registration_no -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Unique identifier in Names Registry" style="color:#000000 !important;">Names Registry ID</a></b>
+                                </td>
+                                <td>
+                                    88922/nr007bb08 <!-- nr_id -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="State of residence at time of removal" style="color:#000000 !important;">Birth Place</a></b>
+                                </td>
+                                <td>
+                                    Honshu southern division<!-- birth_place -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="State of residence at time of removal" style="color:#000000 !important;">Home State</a></b>
                                 </td>
                                 <td>
                                     CA
@@ -259,33 +309,19 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="City of residence at time of removal">Home City</a>
+                                    <b><a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="City of residence at time of removal" style="color:#000000 !important;">Home City</a></b>
                                 </td>
                                 <td>
                                     Guadalupe
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" data-original-title="Alternate and middle names">Alternate Names</a>
-                                </td>
-                                <td>
-                                    nickname: "Chimmy"; alternate: Sumida
-                                </td>
-                            </tr>
                         </tbody>
                     </table>
-        </div><!--end core details table-->
+                </div><!--end core details table-->
             
-
-
-        <p>
-            <h3><strong><i class="fa fa-users"></i> Family Members</strong> <small class="font300">WRA Family No. 14448</small></h3>
-        </p>
-
-        <p>
+            <h3><strong><i class="fa fa-users"></i> Family Members</strong> <small class="font300">WRA Family No. 60091</small></h3> <!-- wra_family_number -->
             <div class="table-responsive">
-            <table class="table table-striped">
+                <table class="table table-striped">
         	<thead>
         		<tr>
         			<th>
@@ -295,108 +331,106 @@
         				Birthyear
         			</th>
         			<th>
-        				Facility
+        				WRA Individual No
         			</th>
         		</tr>
         	</thead>
         	<tbody>
         		<tr>
         			<td>
-        				<a href="http://sangabriel.pagekite.me/names/far-ancestry:1-topaz_%3F%3Fa_1908_%3F%3Fa%3F%3Fy/">
-        				Nakamura, Sarah (F)
+        				<a href="https://ddr.densho.org/names/persons/88922/nr0072j39"> <!-- links.html -->
+        				Sueko Sumida (F) <!-- preferred_name, gender -->
         				</a>
         			</td>
         			<td>
-        				1908
+        				1897 <!-- birth_year -->
         			</td>
         			<td>
-        				Topaz
+        				60091B <!-- wra_individual_no -->
         			</td>
         		</tr>
         		<tr>
         			<td>
-        				<a href="http://sangabriel.pagekite.me/names/far-ancestry:1-topaz_%3F%3Fa_1908_%3F%3Fa%3F%3Fy/">
-        				Nakamura, Sarah (F)
+        				<a href="https://ddr.densho.org/names/persons/88922/nr0072j39">
+        				Jun Daniel Sumida (M)
         				</a>
         			</td>
         			<td>
-        				1908
+        				1920
         			</td>
         			<td>
-        				Topaz
+        				60091C
         			</td>
         		</tr>
         		<tr>
         			<td>
-        				<a href="http://sangabriel.pagekite.me/names/far-ancestry:1-topaz_%3F%3Fa_1908_%3F%3Fa%3F%3Fy/">
-        				Nakamura, Sarah (F)
+        				<a href="https://ddr.densho.org/names/persons/88922/nr0072j39">
+        				Sarah Kimiko Sumida (F)
         				</a>
         			</td>
         			<td>
-        				1908
+        				1922
         			</td>
         			<td>
-        				Topaz
+        				60091D
         			</td>
         		</tr>
         		<tr>
         			<td>
-        				<a href="http://sangabriel.pagekite.me/names/far-ancestry:1-topaz_%3F%3Fa_1908_%3F%3Fa%3F%3Fy/">
-        				Nakamura, Sarah (F)
+        				<a href="https://ddr.densho.org/names/persons/88922/nr0072j39">
+        				Ellen Yuko Sumida (F)
         				</a>
         			</td>
         			<td>
-        				1908
+        				1938
         			</td>
         			<td>
-        				Topaz
+        				60091E
         			</td>
         		</tr>
         	</tbody>
-        </table>
-        </div><!--end left col-->
+            </table>
+            </div>
+                
+            </div><!--end left col-->
         
-        
-    </div>
-        
-        
-        <div class="col-sm-5 col-md-5"><!--begin right col-->
+            <div class="col-sm-5 col-md-5"><!--begin right col-->
             
-            <!--begin related records -->
-                        <h4><strong><i class="fa fa-archive"></i> Related Records</strong></h4>
+                <!--begin related records -->
+                <h4><strong><i class="fa fa-archive"></i> Related Records</strong></h4>
 
                     <p>
-                        <div class="table-responsive">
+                    <div class="table-responsive">
                         <table class="table table-striped">
-                    	<thead>
-                    		<tr>
-                    			<th>
-                                    WRA Form 26
-                    			</th>
-                    			<th>
-                    				Facility
-                    			</th>
-                    			<th>
-                    				Record ID
-                    			</th>
-                    		</tr>
-                    	</thead>
-                    	<tbody>
-                    		<tr>
-                    			<td>
-                    				<a href="https://namesstage.densho.org/names/wrarecords/82360">
-                    				SUMIDA, CHIMATA
-                    				</a>
-                    			</td>
-                    			<td>
-                    				Rohwer
-                    			</td>
-                    			<td>
-                    				82360
-                    			</td>
-                    		</tr>
-                    	</tbody>
-                    </table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        WRA Form 26
+                                    </th>
+                                    <th>
+                                        Facility
+                                    </th>
+                                    <th>
+                                        Record ID
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="https://namesstage.densho.org/names/wrarecords/82360"><!-- wra_records.item.links.html -->
+                                            SUMIDA, CHIMATA<!-- wra_records.item.last_name, wra_records.item.first_name -->
+                                        </a>
+                                    </td>
+                                    <td>
+                                        Rohwer<!-- wra_records.item.facility -->
+                                    </td>
+                                    <td>
+                                        82360<!-- wra_records.item.wra_record_id -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div><!--end table-responsive-->
                     </p>
 
@@ -458,7 +492,7 @@
                 </p>
             </div>
         </div><!-- end right col -->
-
+    </div>
 
 
 
@@ -471,9 +505,521 @@
                     </a>
                 </p>
         
-            </div>
+<!--    </div> -->
+
+
+
+<!-- begin related objects section-->
+      <div class="row"> <!-- results content -->
+        <div class="col-sm-12 col-md-12">
+          <!--  view selection tabs -->
+          <div class="tabs no-margin-top" style="margin:10px 0;">
+
+<h4><strong><i class="fa fa-files-o"></i> Archive objects</strong></h4>
+
+            <ul class="nav nav-tabs">
+              <li class="gallery active">
+                <a href="#gallery_tab" data-toggle="tab">
+                  <i class="fa fa-th"></i> Gallery view
+                </a>
+              </li>
+              <li class="list ">
+                <a href="#list_tab" data-toggle="tab">
+                  <i class="fa fa-list"></i> List view
+                </a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+
+              <div id="gallery_tab" class="tab-pane active">
+                <div id="item-count">
+                  68 items<br/>
+                </div>
+
+
+
+<ul class="pagination ">
+
+    
+      <li class="page-item disabled">
+        <span class="page-link" aria-hidden="true" title="First Page">&laquo;</span>
+      </li>
+    
+
+
+    
+      <li class="page-item disabled">
+        <span class="page-link" aria-hidden="true" title="Previous Page">&larr;</span>
+      </li>
+    
+
+
+    
+        <li class="page-item active">
+          <span class="page-link" aria-label="Current Page" title="Current Page"> 1 </span>
+        </li>
+    
+
+    
+        <li class="page-item">
+          <a class="page-link" aria-label="Page 2 of 3" title="Page 2 of 3" href="?page=2"> 2 </a>
+        </li>
+    
+
+    
+        <li class="page-item">
+          <a class="page-link" aria-label="Page 3 of 3" title="Page 3 of 3" href="?page=3"> 3 </a>
+        </li>
+    
+
+
+    
+      <li class="page-item">
+        <a class="page-link"  aria-label="Next Page" title="Next Page" href="?page=2"><span aria-hidden="true">&rarr;</span></a>
+      </li>
+    
+
+
+    
+      <li class="page-item">
+        <a class="page-link" aria-label="Last Page" title="Last Page" href="?page=3"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+    
+
+</ul>
+
+
+                <div class="row">
+                  <ul class="sort-destination isotope fullwidth" data-sort-id="isotope-list">
+
+ 
+                   <!-- ddr-densho-2-1 format: img -->
+                    <li class="isotope-item"><!-- slide item -->
+                        <div class="item-box">
+                            <figure>
+                                <a class="item-hover" href="https://ddr.densho.org/ddr-densho-2-1/" data-plugin-options='{"type":"image"}'>
+                                    <span class="overlay color2"></span>
+                                    <span class="inner">
+                                        <span class="block fa fa-file-image-o fsize26"></span>
+                                        <span class="gallery-list-text">Family and friends on farm</span>
+                                        <span class="gallery-list-id">(ddr-densho-2-1)</span>
+                                    </span>
+                                </a>
+
+
+                                <!-- src: https://ddr.densho.org/media/cache/b9/b6/b9b6b3aa26ba27a5db6ed32a58e55b07.jpg -->
+                                <img src="https://ddr.densho.org/media/cache/b9/b6/b9b6b3aa26ba27a5db6ed32a58e55b07.jpg" class="img-responsive" width="260" height="260" alt="Family and friends on farm (ddr-densho-2-1)" />
+
+                            </figure>
+                        </div>
+                    </li>
+
+
+ 
+                   <!-- ddr-densho-2-2 format: img -->
+                    <li class="isotope-item"><!-- slide item -->
+                        <div class="item-box">
+                            <figure>
+                                <a class="item-hover" href="https://ddr.densho.org/ddr-densho-2-2/" data-plugin-options='{"type":"image"}'>
+                                    <span class="overlay color2"></span>
+                                    <span class="inner">
+                                        <span class="block fa fa-file-image-o fsize26"></span>
+                                        <span class="gallery-list-text">Mother with children on farm</span>
+                                        <span class="gallery-list-id">(ddr-densho-2-2)</span>
+                                    </span>
+                                </a>
+
+
+                                <!-- src: https://ddr.densho.org/media/cache/46/96/46963edaf5dec081fb47eeadd1cabdaf.jpg -->
+                                <img src="https://ddr.densho.org/media/cache/46/96/46963edaf5dec081fb47eeadd1cabdaf.jpg" class="img-responsive" width="260" height="260" alt="Mother with children on farm (ddr-densho-2-2)" />
+
+                            </figure>
+                        </div>
+                    </li>
+
+
+ 
+                   <!-- ddr-densho-2-3 format: img -->
+                    <li class="isotope-item"><!-- slide item -->
+                        <div class="item-box">
+                            <figure>
+                                <a class="item-hover" href="https://ddr.densho.org/ddr-densho-2-3/" data-plugin-options='{"type":"image"}'>
+                                    <span class="overlay color2"></span>
+                                    <span class="inner">
+                                        <span class="block fa fa-file-image-o fsize26"></span>
+                                        <span class="gallery-list-text">Fujin Home</span>
+                                        <span class="gallery-list-id">(ddr-densho-2-3)</span>
+                                    </span>
+                                </a>
+
+
+                                <!-- src: https://ddr.densho.org/media/cache/81/de/81deee99b7e55329dfda3afccbb3af44.jpg -->
+                                <img src="https://ddr.densho.org/media/cache/81/de/81deee99b7e55329dfda3afccbb3af44.jpg" class="img-responsive" width="260" height="260" alt="Fujin Home (ddr-densho-2-3)" />
+
+                            </figure>
+                        </div>
+                    </li>
+
+
+ 
+                   <!-- ddr-densho-2-4 format: img -->
+                    <li class="isotope-item"><!-- slide item -->
+                        <div class="item-box">
+                            <figure>
+                                <a class="item-hover" href="https://ddr.densho.org/ddr-densho-2-4/" data-plugin-options='{"type":"image"}'>
+                                    <span class="overlay color2"></span>
+                                    <span class="inner">
+                                        <span class="block fa fa-file-image-o fsize26"></span>
+                                        <span class="gallery-list-text">Corsage made of shells</span>
+                                        <span class="gallery-list-id">(ddr-densho-2-4)</span>
+                                    </span>
+                                </a>
+
+
+                                <!-- src: https://ddr.densho.org/media/cache/90/d4/90d4459f903dd36d2b7f895cf3d056c2.jpg -->
+                                <img src="https://ddr.densho.org/media/cache/90/d4/90d4459f903dd36d2b7f895cf3d056c2.jpg" class="img-responsive" width="260" height="260" alt="Corsage made of shells (ddr-densho-2-4)" />
+
+                            </figure>
+                        </div>
+                    </li>
+
+
+ 
+                   <!-- ddr-densho-2-5 format: img -->
+                    <li class="isotope-item"><!-- slide item -->
+                        <div class="item-box">
+                            <figure>
+                                <a class="item-hover" href="https://ddr.densho.org/ddr-densho-2-5/" data-plugin-options='{"type":"image"}'>
+                                    <span class="overlay color2"></span>
+                                    <span class="inner">
+                                        <span class="block fa fa-file-image-o fsize26"></span>
+                                        <span class="gallery-list-text">Boy in backyard</span>
+                                        <span class="gallery-list-id">(ddr-densho-2-5)</span>
+                                    </span>
+                                </a>
+
+
+                                <!-- src: https://ddr.densho.org/media/cache/97/2b/972b6270e4244ef1c9ba419210e2aad4.jpg -->
+                                <img src="https://ddr.densho.org/media/cache/97/2b/972b6270e4244ef1c9ba419210e2aad4.jpg" class="img-responsive" width="260" height="260" alt="Boy in backyard (ddr-densho-2-5)" />
+
+                            </figure>
+                        </div>
+                        </li
+                  </ul>
+                </div><!-- /.masonry-container -->
+
+
+
+
+<ul class="pagination ">
+
+    
+      <li class="page-item disabled">
+        <span class="page-link" aria-hidden="true" title="First Page">&laquo;</span>
+      </li>
+    
+
+
+    
+      <li class="page-item disabled">
+        <span class="page-link" aria-hidden="true" title="Previous Page">&larr;</span>
+      </li>
+    
+
+
+    
+        <li class="page-item active">
+          <span class="page-link" aria-label="Current Page" title="Current Page"> 1 </span>
+        </li>
+    
+
+    
+        <li class="page-item">
+          <a class="page-link" aria-label="Page 2 of 3" title="Page 2 of 3" href="?page=2"> 2 </a>
+        </li>
+    
+
+    
+        <li class="page-item">
+          <a class="page-link" aria-label="Page 3 of 3" title="Page 3 of 3" href="?page=3"> 3 </a>
+        </li>
+    
+
+
+    
+      <li class="page-item">
+        <a class="page-link"  aria-label="Next Page" title="Next Page" href="?page=2"><span aria-hidden="true">&rarr;</span></a>
+      </li>
+    
+
+
+    
+      <li class="page-item">
+        <a class="page-link" aria-label="Last Page" title="Last Page" href="?page=3"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+    
+
+</ul>
+
+
+
+              </div> <!-- end gallery_tab -->
+
+              <div id="list_tab" class="tab-pane ">
+                <div id="item-count">
+                  68 items<br/>
+                </div>
+
+
+
+
+<ul class="pagination ">
+
+    
+      <li class="page-item disabled">
+        <span class="page-link" aria-hidden="true" title="First Page">&laquo;</span>
+      </li>
+    
+
+
+    
+      <li class="page-item disabled">
+        <span class="page-link" aria-hidden="true" title="Previous Page">&larr;</span>
+      </li>
+    
+
+
+    
+        <li class="page-item active">
+          <span class="page-link" aria-label="Current Page" title="Current Page"> 1 </span>
+        </li>
+    
+
+    
+        <li class="page-item">
+          <a class="page-link" aria-label="Page 2 of 3" title="Page 2 of 3" href="?page=2"> 2 </a>
+        </li>
+    
+
+    
+        <li class="page-item">
+          <a class="page-link" aria-label="Page 3 of 3" title="Page 3 of 3" href="?page=3"> 3 </a>
+        </li>
+    
+
+
+    
+      <li class="page-item">
+        <a class="page-link"  aria-label="Next Page" title="Next Page" href="?page=2"><span aria-hidden="true">&rarr;</span></a>
+      </li>
+    
+
+
+    
+      <li class="page-item">
+        <a class="page-link" aria-label="Last Page" title="Last Page" href="?page=3"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+    
+
+</ul>
+
+
+
+
+
+            <!-- ddr-densho-2-1 -->
+            <div class="media entity">
+
+              <!-- thumbnail: http://ddrmedia.local/media/ddr-densho-2/ddr-densho-2-1-mezzanine-f5d294b968-a.jpg -->
+              <a class="pull-left" href="https://ddr.densho.org/ddr-densho-2-1/">
+                <img class="media-object" src="https://ddr.densho.org/media/cache/ed/94/ed94e87ddc1504125bbd620da08ac9a4.jpg" class="img-responsive" alt="Family and friends on farm (ddr-densho-2-1)"/>
+              </a>
+
+              <div class="media-body">
+                <b class="media-heading">
+                  <span class="badge badge-info">img</span>
+                  <a href="https://ddr.densho.org/ddr-densho-2-1/">Family and friends on farm (ddr-densho-2-1)</a>
+                </b>
+                <!-- entity.genre, entity.description  -->
+                <div class="source muted">
+                    The Nishimura family and friends on their farm in Seattle, Washington. Left to right: Kumataro Nishimura, Kadju Nishimura, Emily Herold holding Mary Nakashige, Peggie Yorita, Patsy Yorita, Tom Nishimura, Jiro Matsumura, Harry Oki (behind Matsumura), Hanni Nishimura, and Alex Ando.
+                </div>
+                <div class="url">
+                  <a href="https://ddr.densho.org/ddr-densho-2-1/">https://ddr.densho.org/ddr-densho-2-1/</a>
+                </div>
+              </div><!-- .media-body -->
+            </div><!-- .media -->
+
+
+
+            <!-- ddr-densho-2-2 -->
+            <div class="media entity">
+
+              <!-- thumbnail: http://ddrmedia.local/media/ddr-densho-2/ddr-densho-2-2-mezzanine-861332abbf-a.jpg -->
+              <a class="pull-left" href="https://ddr.densho.org/ddr-densho-2-2/">
+                <img class="media-object" src="https://ddr.densho.org/media/cache/f8/e2/f8e2cd560624fea402dcc743617940b2.jpg" class="img-responsive" alt="Mother with children on farm (ddr-densho-2-2)"/>
+              </a>
+
+              <div class="media-body">
+                <b class="media-heading">
+                  <span class="badge badge-info">img</span>
+                  <a href="https://ddr.densho.org/ddr-densho-2-2/">Mother with children on farm (ddr-densho-2-2)</a>
+                </b>
+                <!-- entity.genre, entity.description  -->
+                <div class="source muted">
+                    Patsy, Peggie, and Jimmie Yorita on the Nishimura family farm.
+                </div>
+                <div class="url">
+                  <a href="https://ddr.densho.org/ddr-densho-2-2/">https://ddr.densho.org/ddr-densho-2-2/</a>
+                </div>
+              </div><!-- .media-body -->
+            </div><!-- .media -->
+
+
+
+            <!-- ddr-densho-2-3 -->
+            <div class="media entity">
+
+              <!-- thumbnail: http://ddrmedia.local/media/ddr-densho-2/ddr-densho-2-3-mezzanine-55a1face92-a.jpg -->
+              <a class="pull-left" href="https://ddr.densho.org/ddr-densho-2-3/">
+                <img class="media-object" src="https://ddr.densho.org/media/cache/b7/57/b7579a05376e68c99ac5d0414b9165ae.jpg" class="img-responsive" alt="Fujin Home (ddr-densho-2-3)"/>
+              </a>
+
+              <div class="media-body">
+                <b class="media-heading">
+                  <span class="badge badge-info">img</span>
+                  <a href="https://ddr.densho.org/ddr-densho-2-3/">Fujin Home (ddr-densho-2-3)</a>
+                </b>
+                <!-- entity.genre, entity.description  -->
+                <div class="source muted">
+                    The Fujin Home, which was affiliated with the Christian Baptist Church, was located at 11th and Spruce in Seattle, Washington. It offered shelter for people such as orphans, the handicapped, and women who were recently divorced or widowed and who had nowhere else to go. Various types of classes and social activities were organized by the …
+                </div>
+                <div class="url">
+                  <a href="https://ddr.densho.org/ddr-densho-2-3/">https://ddr.densho.org/ddr-densho-2-3/</a>
+                </div>
+              </div><!-- .media-body -->
+            </div><!-- .media -->
+
+
+
+            <!-- ddr-densho-2-4 -->
+            <div class="media entity">
+
+              <!-- thumbnail: http://ddrmedia.local/media/ddr-densho-2/ddr-densho-2-4-mezzanine-ff95505267-a.jpg -->
+              <a class="pull-left" href="https://ddr.densho.org/ddr-densho-2-4/">
+                <img class="media-object" src="https://ddr.densho.org/media/cache/b4/3b/b43b24e4e39f44141aff6f2b7cfd8706.jpg" class="img-responsive" alt="Corsage made of shells (ddr-densho-2-4)"/>
+              </a>
+
+              <div class="media-body">
+                <b class="media-heading">
+                  <span class="badge badge-info">img</span>
+                  <a href="https://ddr.densho.org/ddr-densho-2-4/">Corsage made of shells (ddr-densho-2-4)</a>
+                </b>
+                <!-- entity.genre, entity.description  -->
+                <div class="source muted">
+                    This corsage pin was made by a Japanese American in camp. The flower petals and leaves are made from various types of shells found at the camp. She used toothbrush bristles dipped in cornmeal for stamens and wound the stems by hand with fine green thread. Wire from screen windows was used to put the pin …
+                </div>
+                <div class="url">
+                  <a href="https://ddr.densho.org/ddr-densho-2-4/">https://ddr.densho.org/ddr-densho-2-4/</a>
+                </div>
+              </div><!-- .media-body -->
+            </div><!-- .media -->
+
+
+
+            <!-- ddr-densho-2-5 -->
+            <div class="media entity">
+
+              <!-- thumbnail: http://ddrmedia.local/media/ddr-densho-2/ddr-densho-2-5-mezzanine-30ca40c6f1-a.jpg -->
+              <a class="pull-left" href="https://ddr.densho.org/ddr-densho-2-5/">
+                <img class="media-object" src="https://ddr.densho.org/media/cache/0d/ad/0dad09a8129ed3c1bbad5e4d3b50b516.jpg" class="img-responsive" alt="Boy in backyard (ddr-densho-2-5)"/>
+              </a>
+
+              <div class="media-body">
+                <b class="media-heading">
+                  <span class="badge badge-info">img</span>
+                  <a href="https://ddr.densho.org/ddr-densho-2-5/">Boy in backyard (ddr-densho-2-5)</a>
+                </b>
+                <!-- entity.genre, entity.description  -->
+                <div class="source muted">
+                    Jimmie Yorita.
+                </div>
+                <div class="url">
+                  <a href="https://ddr.densho.org/ddr-densho-2-5/">https://ddr.densho.org/ddr-densho-2-5/</a>
+                </div>
+              </div><!-- .media-body -->
+            </div><!-- .media -->
+
+
+
+
+
+
+
+
+<ul class="pagination ">
+
+    
+      <li class="page-item disabled">
+        <span class="page-link" aria-hidden="true" title="First Page">&laquo;</span>
+      </li>
+    
+
+
+    
+      <li class="page-item disabled">
+        <span class="page-link" aria-hidden="true" title="Previous Page">&larr;</span>
+      </li>
+    
+
+
+    
+        <li class="page-item active">
+          <span class="page-link" aria-label="Current Page" title="Current Page"> 1 </span>
+        </li>
+    
+
+    
+        <li class="page-item">
+          <a class="page-link" aria-label="Page 2 of 3" title="Page 2 of 3" href="?page=2"> 2 </a>
+        </li>
+    
+
+    
+        <li class="page-item">
+          <a class="page-link" aria-label="Page 3 of 3" title="Page 3 of 3" href="?page=3"> 3 </a>
+        </li>
+    
+
+
+    
+      <li class="page-item">
+        <a class="page-link"  aria-label="Next Page" title="Next Page" href="?page=2"><span aria-hidden="true">&rarr;</span></a>
+      </li>
+    
+
+
+    
+      <li class="page-item">
+        <a class="page-link" aria-label="Last Page" title="Last Page" href="?page=3"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+    
+
+</ul>
+
+
+
+              </div> <!-- end list_tab -->
+
+            </div> <!-- end tabs content -->
+          </div> <!-- end tabs -->
+
         </div>
-    </div>
+      </div> <!-- .row results content -->
+<!--end related object section-->
+
+
 
 </div><!-- .container-fluid -->
 
